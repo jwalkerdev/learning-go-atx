@@ -28,5 +28,5 @@ cd 002-structs-methods-interfaces/shape
 go test -v
 go run shapes.go
 # test from anywhere on your local system
-go test -v github.com/jwalkerdev/learning-go-class/002-structs-methods-interfaces/custom
+go test -v github.com/jwalkerdev/learning-go-class/002-structs-methods-interfaces/shape
 ```
