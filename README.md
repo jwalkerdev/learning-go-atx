@@ -24,9 +24,9 @@ go test -v github.com/jwalkerdev/learning-go-class/001-hello
 Test / Run
 ```bash
 # Dev Cycle
-cd 002-structs-methods-interfaces
-go run shapes.go
+cd 002-structs-methods-interfaces/shape
 go test -v
+go run shapes.go
 # test from anywhere on your local system
 go test -v github.com/jwalkerdev/learning-go-class/002-structs-methods-interfaces/custom
 ```
