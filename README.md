@@ -36,7 +36,7 @@ go build ./cmd/main.go
 ./main
 ```
 
-## Week 3 Homework
+## Week 3 Homework - Tools
 
 * Homework:
   * Write a palyndrome detection function in go, test it, and run all 3 tools.
@@ -44,3 +44,22 @@ go build ./cmd/main.go
     * Go lint (go get -u golang.org/x/lint/golint)
     * Go vet (built in) analysis tool
     * Go test coverage profile and the go tool cover HTML report generation.
+
+```bash
+# Dev
+cd 003-tools/mypkg
+go test -v
+# Build
+cd 003-tools
+go build ./...
+go run main.go
+# golint
+cd 003-tools
+golint ./mypkg
+# go vet
+go vet ./mypkg
+# go test coverage
+go test -cover ./mypkg
+go test -cover ./mypkg -coverprofile=./mypkg/mypkg-coverage.out
+go tool cover -html=./mypkg/mypkg-coverage.out -o mypkg/coverage.html
+```
